@@ -16,6 +16,11 @@
                 <constraints nullable="false"/>
             </column>
 
+<!--            Колонка не нужна. Пример для удаления-->
+<!--            <column name="card-id" type="int">-->
+<!--                <constraints nullable="false"/>-->
+<!--            </column>-->
+
 
 
         </createTable>
