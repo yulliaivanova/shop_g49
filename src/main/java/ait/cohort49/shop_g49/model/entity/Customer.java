@@ -21,11 +21,20 @@
 //
 package ait.cohort49.shop_g49.model.entity;
 
+import jakarta.persistence.*;
+
 import java.util.Objects;
 
+@Entity
+@Table(name = "customer")
 public class Customer {
+    @Id
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(name = "name")
     private String name;
+    @Column(name = "active")
     private boolean active;
 
     @Override
